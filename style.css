@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* LAYOUT WITH FLOAT */
+.main{
+    width: 900px;
+    height: 200px;
+    background-color: red;
+}
+
+.b1{
+    width: 200px;
+    height: 50px;
+    background-color: aqua;
+    float: left;
+}
+
+.b2{
+    width: 300px;
+    height: 50px;
+    background-color: rgb(28, 109, 109);
+    float: left;
+
+
+}
+
+.b3{
+    width: 400px;
+    height: 50px;
+    background-color: rgb(89, 160, 218);
+    float: left;
+
+
+}
+
+.box2{
+    width: 900px;
+    height: 100px;
+    background-color: rgb(236, 85, 4);
+    float: left;
+}
+
+.c1{
+
+     width: 400px;
+    height: 50px;
+    background-color: rgb(252, 236, 0);
+    float: left;
+}
+
+.c2{
+
+     width: 500px;
+    height: 50px;
+    background-color: rgb(6, 250, 63);
+    float: left;
+}
+
