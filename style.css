@@ -413,3 +413,206 @@ ul {
 .list ul li ul {
     padding-left: 50px;
 }
+
+
+/* ================================================================================================== */
+
+
+/* ANCHOR STATES */
+
+
+/* Jo link abhi tak click nahi hua. */
+.a:link {
+    color: rgb(0, 179, 255);
+}
+
+
+/* Jo link pehle click ho chuka ho. */
+.a:visited {
+    color: green;
+}
+
+
+/* Jab mouse link ke upar aaye. */
+.a:hover {
+    color: yellow;
+}
+
+
+/* Jab user link ko click kar raha ho (mouse button press ki hui ho). */
+.a:active {
+    color: red;
+}
+
+
+
+/* ================================================================================================== */
+
+
+/* COMBINATORS */
+
+
+/* universal selector */
+.us * {
+    color: blue;
+}
+
+
+/* descendant selector */
+.c1 .cc1 {
+    color: red;
+}
+
+
+/* child selector */
+/* all child elements target */
+.mm1 span>p {
+    color: blue;
+}
+
+
+/* adjacent sibling selector */
+/* only first sibling target */
+.mm2 span+p {
+    color: rgb(250, 53, 244);
+}
+
+
+/* general sibling */
+/* all siblings */
+
+.mm2 span~p {
+    color: rgb(250, 53, 244);
+}
+
+
+/* ================================================================================================== */
+
+/* DISPLAY IN CSS */
+
+
+
+/* display block = all properties work like margin, padding, height, width */
+.dh1 {
+    background-color: aqua;
+    margin-inline: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+
+    display: block;
+}
+
+/* display inline-block = all properties work like margin, padding, height, width */
+.dh1 {
+
+    display: inline-block;
+}
+
+
+/* display inline = some properties not work like margin, padding, height, width */
+.dh1 {
+
+    display: inline;
+}
+
+
+/* display none */
+.dh1 {
+
+    display: none;
+}
+
+
+
+/* ================================================================================================== */
+
+/* POSITIONS IN CSS */
+
+
+/* relative and absolute */
+
+.p1 {
+    width: 800px;
+    height: 800px;
+    background-color: aqua;
+    margin: 100px auto;
+    position: relative;
+
+
+}
+
+.pb {
+
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid red;
+    font-size: 30px;
+    position: absolute;
+
+}
+
+/* z-index */
+
+.pb-1 {
+    z-index: 4;
+}
+
+.pb-2 {
+    z-index: 2;
+}
+
+.pb-3 {
+    z-index: 3;
+}
+
+/* =========================================== */
+
+/* .pb-2 {
+    right: 0;
+}
+
+.pb-3 {
+    right: 0;
+    bottom: 0;
+}
+
+
+.pb-4 {
+    left: 0;
+    bottom: 0;
+}
+
+.pb-5 {
+    top: 360px;
+    left: 360px;
+} */
+
+
+/* fixed */
+
+.ph {
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    position: fixed;
+
+}
+
+.pc {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(242, 171, 78);
+    border: 1px solid purple;
+}
+
+/* sticky */
+
+.pbb {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position: sticky;
+    top: 300px;
+}
