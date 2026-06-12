@@ -616,3 +616,180 @@ ul {
     position: sticky;
     top: 300px;
 }
+
+
+
+/* ================================================================================================== */
+
+/* OVERFLOW IN CSS */
+
+.of {
+    width: 40%;
+    height: 300px;
+    background-color: aqua;
+    margin: auto;
+
+
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+}
+
+
+
+/* ================================================================================================== */
+
+
+
+/* PSEUDO ELEMENTS */
+
+
+.pe {
+    width: 50%;
+    height: 300px;
+    background-color: aqua;
+    margin: 40px auto;
+    padding: 60px;
+}
+
+.pe h1 {
+    margin-bottom: 35px;
+    position: relative;
+
+}
+
+
+/* BEFORE */
+.pe1::before {
+    content: "\f121";
+    font-family: "font awesome 6 free";
+    position: absolute;
+    top: -22px;
+    font-size: 17px;
+}
+
+/* AFTER */
+.pe1::after {
+    content: "";
+    border: 1px solid red;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* FIRST-LETTER */
+.pe p::first-letter {
+    color: red;
+    font-size: 30px;
+}
+
+
+/* FIRST-LINE */
+.pe p::first-line {
+    color: purple;
+    text-decoration: underline;
+}
+
+/* SELECTION */
+.pe p::selection {
+    background-color: rgb(252, 134, 234);
+}
+
+
+/* ================================================================================================== */
+
+/* PSEUDO CLASS */
+
+
+/* FIRST-CHILD */
+.psc p:first-child {
+    color: orange;
+}
+
+/* LAST-CHILD */
+.psc li:last-child {
+    color: purple;
+}
+
+
+/* FIRST-OF-TYPE */
+.psc li:first-of-type {
+    color: pink;
+}
+
+/* LAST-OF-TYPE */
+.psc p:last-of-type {
+    color: pink;
+}
+
+/* NTH-OF-TYPE */
+.psc li:nth-of-type(2) {
+    color: chartreuse;
+}
+
+/* NTH-CHILD */
+.psc li:nth-child(odd) {
+    color: aqua;
+}
+
+
+/* ================================================================================================== */
+
+/* COLUMN LAYOUT */
+
+.cl {
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    text-align: justify;
+    column-count: 2;
+    column-gap: 20px;
+    column-rule: 1px solid purple;
+    column-fill: auto;
+}
+
+/* ================================================================================================== */
+
+/* FLEXBOX IN CSS */
+
+.fb {
+    width: 80%;
+    height: 800px;
+    background-color: aqua;
+    margin: auto;
+
+    /* flexbox properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* align-content: center; */
+    flex: auto ;
+}
+
+.items {
+    /* items properties */
+    /* width: 100px;
+    height: 100px; */
+    background-color: chartreuse;
+    border: 1px solid red;
+
+}
+
+/* .i-1 {
+    align-self: flex-end;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+.i-2{
+    flex-grow: 2;
+}
+
+.i-5{
+    order: -1;
+} */
