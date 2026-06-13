@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0px;
-    font-size: 20px;
+    /* font-size: 20px; */
     box-sizing: border-box
 }
 
@@ -1188,7 +1188,7 @@ order =	HTML badle bina item ki position/order change karta hai.bina item ki pos
             content: "*";
         }
 
-         &::after {
+        &::after {
             content: "*";
         }
 
@@ -1207,4 +1207,136 @@ order =	HTML badle bina item ki position/order change karta hai.bina item ki pos
     & button {
         background-color: aqua;
     }
+}
+
+
+
+
+
+/* CSS :is :has :where :not */
+
+/* IS */
+
+:is(h1, h2, h3):hover {
+    color: chartreuse;
+}
+
+
+
+/* NOT */
+button:not(.prim) {
+    color: red;
+}
+
+/* WHERE */
+/* same as :is but specificity 0 */
+
+:where(h1, h2, h3):hover {
+    color: crimson;
+}
+
+
+/* HAS = ye parent ko selct kerta hy for child ager ye is k ksi bhi child me hoga tw  property kam kregi */
+
+.parent:has([type="checkbox"]:checked) label {
+    color: red;
+
+}
+
+
+/* ACCENT COLOR */
+
+input[type="checkbox"] {
+    accent-color: aqua;
+    width: 20px;
+    aspect-ratio: 1;
+}
+
+
+
+/* ================================================================================================== */
+
+
+/* CONTAINER QUERIES */
+
+.wrapper {
+    width: 50%;
+    container-name: layoutChange;
+    container-type: inline-size;
+}
+
+
+
+.card :is(img, p) {
+    width: 100%;
+    color: black;
+}
+
+.card {
+    display: flex;
+}
+
+@container layoutChange (max-width: 400px) {
+    .card {
+        flex-direction: column;
+    }
+}
+
+
+
+/* ================================================================================================== */
+
+/* FLOAT */
+
+
+.float {
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.fg {
+    width: 100px;
+    height: 100px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+
+.ff1 {
+    float: left;
+}
+
+.ff2 {
+    float: left;
+}
+
+
+.ff3 {
+    float: left;
+}
+
+.ff4 {
+    float: left;
+}
+
+.ff5 {
+    float: right;
+}
+
+
+
+
+
+
+/* ================================================================================================== */
+
+
+/* CSS CLIP PATH MAKER  */
+
+/* https://bennettfeely.com/clippy/  */
+
+.ccp {
+    width: 50%;
+
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
 }
