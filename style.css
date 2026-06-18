@@ -701,7 +701,7 @@ gap = 	Items ke darmiyan spacing deta hai.
 flex-flow =   	flex-direction aur flex-wrap ka shorthand hai. */
 
 .fb {
-  width: 80%;
+  width: 100%;
   height: 800px;
   background-color: aqua;
   margin: auto;
@@ -710,7 +710,7 @@ flex-flow =   	flex-direction aur flex-wrap ka shorthand hai. */
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 10px;
   /* align-content: center; */
 }
@@ -730,24 +730,26 @@ align-self =	Sirf ek specific item ki alignment change karta hai.
 order =	HTML badle bina item ki position/order change karta hai.bina item ki position/order change karta hai.   */
 
 .items {
+  /* margin: 2rem; */
+  /* padding: 2rem; */
   /* items properties */
   /* width: 100px;
     height: 100px; */
   background-color: chartreuse;
   border: 1px solid red;
   /* flex: 1; */
-  flex-basis: 200px;
+  /* flex-basis: 200px; */
 }
 
 .i-1 {
   /* align-self: flex-end; */
-  flex-grow: 1;
-  flex-shrink: 1;
+  flex-grow: 2;
+  /* flex-shrink: 3; */
 }
-
+/* 
 .i-2 {
   flex-grow: 4;
-}
+} */
 
 /* ================================================================================================== */
 
