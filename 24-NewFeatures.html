@@ -1,0 +1,87 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    /* NEW-CSS-FEATURES */
+
+/* CSS LOGICAL  PROPERTIES (INLINE-BLOCK) */
+
+.ncssv {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.ncv {
+  border-inline: 2px solid yellowgreen;
+  border-block: 2px solid red;
+}
+
+/* CSS-NESTING */
+
+.cssnes {
+  & h1 {
+    color: orange;
+
+    &::before {
+      content: "*";
+    }
+
+    &::after {
+      content: "*";
+    }
+
+    /* WRITING-MODE */
+    writing-mode: vertical-lr;
+  }
+
+  & p {
+    color: purple;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  & button {
+    background-color: aqua;
+  }
+}
+</style>
+<body>
+
+      <!-- NEW-CSS-FEATURES -->
+
+    <!-- /* CSS LOGICAL  PROPERTIES (INLINE-BLOCK) */ -->
+
+    <!-- <div class="ncssv">
+
+        <h1 class="ncv">SYEDA ATRUBA ABID ALI</h1>
+    </div> -->
+
+
+        <!-- ================================================= -->
+
+    <!-- CSS-NESTING -->
+
+    <!-- <div class="cssnes">
+        <h1>Atruba</h1>
+        <p>ABid</p>
+        <a href="">Go</a>
+        <br>
+        <button>Done</button>
+    </div>
+
+    <br>
+    <br>
+    <br> -->
+    
+</body>
+</html>

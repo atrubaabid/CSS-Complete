@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* POSITIONS IN CSS */
+
+  /* relative and absolute */
+
+  .p1 {
+    width: 800px;
+    height: 800px;
+    background-color: aqua;
+    margin: 100px auto;
+    position: relative;
+  }
+
+  .pb {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid red;
+    font-size: 30px;
+    position: absolute;
+  }
+
+  /* z-index */
+
+  .pb-1 {
+    z-index: 4;
+  }
+
+  .pb-2 {
+    z-index: 2;
+  }
+
+  .pb-3 {
+    z-index: 3;
+  }
+
+  /* =========================================== */
+
+  /* .pb-2 {
+    right: 0;
+}
+
+.pb-3 {
+    right: 0;
+    bottom: 0;
+}
+
+
+.pb-4 {
+    left: 0;
+    bottom: 0;
+}
+
+.pb-5 {
+    top: 360px;
+    left: 360px;
+} */
+
+  /* fixed */
+
+  .ph {
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    position: fixed;
+  }
+
+  .pc {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(242, 171, 78);
+    border: 1px solid purple;
+  }
+
+  /* sticky */
+
+  .pbb {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position: sticky;
+    top: 300px;
+  }
+</style>
+
+<body>
+
+
+  <!-- POSITIONS IN CSS -->
+
+  <!-- /* relative and absolute */ -->
+
+  <div class="p1">
+    <div class="pb pb-1">Box 1</div>
+    <div class="pb pb-2">Box 2</div>
+    <div class="pb pb-3">Box 3</div>
+    <div class="pb pb-4">Box 4</div>
+    <div class="pb pb-5">Box 5</div>
+  </div>
+
+  <!-- /* fixed */ -->
+
+  <div class="ph"></div>
+  <div class="pc"></div>
+  <div class="pc">
+
+    <div class="pbb">sticky </div>
+  </div>
+  <div class="pc"></div>
+  <div class="pc"></div>
+
+</body>
+
+</html>
