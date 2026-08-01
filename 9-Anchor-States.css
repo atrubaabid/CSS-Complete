@@ -1,0 +1,21 @@
+/* ANCHOR STATES */
+
+/* Jo link abhi tak click nahi hua. */
+.a:link {
+  color: rgb(0, 179, 255);
+}
+
+/* Jo link pehle click ho chuka ho. */
+.a:visited {
+  color: green;
+}
+
+/* Jab mouse link ke upar aaye. */
+.a:hover {
+  color: yellow;
+}
+
+/* Jab user link ko click kar raha ho (mouse button press ki hui ho). */
+.a:active {
+  color: red;
+}

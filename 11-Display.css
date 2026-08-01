@@ -1,0 +1,27 @@
+/* DISPLAY IN CSS */
+
+/* display block = all properties work like margin, padding, height, width */
+.dh1 {
+  background-color: aqua;
+  margin-inline: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+
+  display: block;
+}
+
+/* display inline-block = all properties work like margin, padding, height, width */
+.dh1 {
+  display: inline-block;
+}
+
+/* display inline = some properties not work like margin, padding, height, width */
+.dh1 {
+  display: inline;
+}
+
+/* display none */
+.dh1 {
+  display: none;
+}

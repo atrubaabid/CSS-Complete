@@ -1,0 +1,27 @@
+/* // BACKGROUND PROPERTIES */
+
+.box1 {
+    
+width: 100%;
+height: 1000px;
+/* 1 */
+background-color: rgb(28, 28, 28);
+/* 2 */
+background-image: url(images/img\ \(4\).jpg);
+/* 3 */
+background-repeat: no-repeat;
+/* 4 */
+background-position: right top;
+/* 5 */
+/* cover, contain, auto */
+background-size: 100% 100%;
+/* 6 */
+background-attachment: fixed;
+/* 7 */
+/* //blending modes */
+background-blend-mode: screen;
+
+/* we can add all values like that also */
+background: aqua url(images/img\ \(1\).jpg) no-repeat right top fixed cover;
+
+}

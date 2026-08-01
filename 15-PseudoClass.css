@@ -1,0 +1,39 @@
+/* PSEUDO CLASS */
+
+/* :first-child    	Parent ka pehla child
+:last-child     	Parent ka akhri child
+:nth-child(n)   	Parent ke sab children
+
+:first-of-type  	Apni tag type ka pehla element
+:last-of-type	    Apni tag type ka akhri element
+:nth-of-type(n) 	Sirf us tag type ko count karta hai */
+
+/* FIRST-CHILD   ager ye element, pury parent ka first child hoga to kam krega*/
+.psc p:first-child {
+  color: orange;
+}
+
+/* LAST-CHILD   ager ye element, pury parent ka last child hoga to kam krega */
+.psc li:last-child {
+  color: purple;
+}
+
+/* FIRST-OF-TYPE   pury parents me sy apny tag ka first element select krega */
+.psc li:first-of-type {
+  color: rgb(253, 0, 42);
+}
+
+/* LAST-OF-TYPE   pury parents me sy apny tag ka last element select krega */
+.psc p:last-of-type {
+  color: pink;
+}
+
+/* NTH-OF-TYPE    pury parents me sy selected element k tag count kerta hy*/
+.psc li:nth-of-type(2) {
+  color: chartreuse;
+}
+
+/* NTH-CHILD     pury parents k child count kerta hy */
+p:nth-child(2) {
+  color: aqua;
+}

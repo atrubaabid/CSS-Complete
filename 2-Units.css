@@ -1,0 +1,27 @@
+/* UNITS IN CSS */
+
+/* absolute lengths */
+/* px, in, pt */
+
+/* relative lengths */
+/* em, rem, %  */
+
+/* .unitbox {
+    font-size: 20px;
+} */
+
+/* PX */
+/* .unit{
+    font-size: 30px;
+} */
+
+/* em =16px  ye apny parent div k size k related value change kerta hy*/
+/* .unit {
+    font-size: 3em;
+} */
+
+/* rem = 20px i gave on star selector to root */
+/* ye apny root (*) k size k related value change kerta hy */
+/* .unit {
+    font-size: 3rem;
+} */

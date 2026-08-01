@@ -1,0 +1,34 @@
+/* FLOAT */
+
+.float {
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+}
+
+.fg {
+  width: 100px;
+  height: 100px;
+  background-color: blanchedalmond;
+  border: 1px solid black;
+}
+
+.ff1 {
+  float: left;
+}
+
+.ff2 {
+  float: left;
+}
+
+.ff3 {
+  float: left;
+}
+
+.ff4 {
+  float: left;
+}
+
+.ff5 {
+  float: right;
+}

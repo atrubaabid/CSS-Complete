@@ -1,0 +1,89 @@
+/* TRANSITIONS IN CSS */
+
+.btn {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: aqua;
+  padding: 10px;
+  margin: 100px 0;
+
+  /* TRANSITIONS */
+  transition-property: width;
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 1s;
+
+  /*  all properties */
+  /* property, timing, function,delay */
+
+  /* transition: width 1s ease-in-out 0s; */
+  transition: all 1s ease-in-out 0s;
+}
+
+.btn:hover {
+  width: 400px;
+  background-color: purple;
+  color: white;
+}
+
+/* for-images */
+
+.ti {
+  width: 300px;
+  transition: all 0.5s ease-in-out;
+}
+
+.ti:hover {
+  width: 500px;
+  border: 25px solid red;
+}
+
+/* TRANSITION PROJECT */
+
+/* .trc {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 9, 55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+
+.trci {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 10px solid rgb(2, 186, 186);
+    border-radius: 50%;
+    transition: all 0.5s ease-in;
+
+
+} */
+
+/* .trc-1:hover {
+    transform: translateX(90vw);
+
+}
+
+.trc-2:hover {
+    transform: translateX(90vw);
+
+
+}
+
+.trc-3:hover {
+    transform: translateX(90vw);
+
+
+}
+
+.trc-4:hover {
+    transform: translateX(90vw);
+
+
+} */

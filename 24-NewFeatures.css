@@ -1,0 +1,44 @@
+/* NEW-CSS-FEATURES */
+
+/* CSS LOGICAL  PROPERTIES (INLINE-BLOCK) */
+
+.ncssv {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.ncv {
+  border-inline: 2px solid yellowgreen;
+  border-block: 2px solid red;
+}
+
+/* CSS-NESTING */
+
+.cssnes {
+  & h1 {
+    color: orange;
+
+    &::before {
+      content: "*";
+    }
+
+    &::after {
+      content: "*";
+    }
+
+    /* WRITING-MODE */
+    writing-mode: vertical-lr;
+  }
+
+  & p {
+    color: purple;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  & button {
+    background-color: aqua;
+  }
+}

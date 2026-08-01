@@ -1,0 +1,68 @@
+/* FLEXBOX IN CSS */
+
+/* display: flex =   	Container ko flex layout bana deta hai.
+
+flex-direction =      	Items kis direction (row/column) mein lagenge.
+
+justify-content =     	Main axis par items ki position set karta hai.
+
+align-items =     	Cross axis par items ko align karta hai.
+
+flex-wrap =   	Space kam ho to items next line mein jayen ya nahi.
+
+align-content =   	Multiple rows/columns ki alignment control karta hai.
+
+gap = 	Items ke darmiyan spacing deta hai.
+
+flex-flow =   	flex-direction aur flex-wrap ka shorthand hai. */
+
+.fb {
+  width: 100%;
+  height: 800px;
+  background-color: aqua;
+  margin: auto;
+
+  /* flexbox properties */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 10px;
+  /* align-content: center; */
+}
+
+/* 
+
+flex-grow =	Extra available space kitni le, ye decide karta hai.
+
+flex-shrink =	Space kam ho to item kitna chhota ho, ye decide karta hai.
+
+flex-basis =	Item ka initial size set karta hai.
+
+flex =	grow + shrink + basis ka shorthand hai.
+
+align-self =	Sirf ek specific item ki alignment change karta hai.
+
+order =	HTML badle bina item ki position/order change karta hai.bina item ki position/order change karta hai.   */
+
+.items {
+  /* margin: 2rem; */
+  /* padding: 2rem; */
+  /* items properties */
+  /* width: 100px;
+    height: 100px; */
+  background-color: chartreuse;
+  border: 1px solid red;
+  /* flex: 1; */
+  /* flex-basis: 200px; */
+}
+
+.i-1 {
+  /* align-self: flex-end; */
+  flex-grow: 2;
+  /* flex-shrink: 3; */
+}
+/* 
+.i-2 {
+  flex-grow: 4;
+} */

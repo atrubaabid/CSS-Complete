@@ -1,0 +1,9 @@
+/* CSS VARIABLES */
+
+:root {
+  --first-color: green;
+}
+
+.cssv h3 {
+  color: var(--first-color);
+}

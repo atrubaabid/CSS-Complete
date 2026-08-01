@@ -1,0 +1,30 @@
+/* COMBINATORS */
+
+/* universal selector */
+.us * {
+  color: blue;
+}
+
+/* descendant selector */
+.c1 .cc1 {
+  color: red;
+}
+
+/* child selector */
+/* all child elements target */
+.mm1 span > p {
+  color: blue;
+}
+
+/* adjacent sibling selector */
+/* only first sibling target */
+.mm2 span + p {
+  color: rgb(250, 53, 244);
+}
+
+/* general sibling */
+/* all siblings */
+
+.mm2 span ~ p {
+  color: rgb(250, 53, 244);
+}

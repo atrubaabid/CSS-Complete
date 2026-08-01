@@ -1,0 +1,118 @@
+/* BOX-MODEL */
+
+/* BORDER */
+/* BORDER RADIUS */
+
+.box {
+  width: 400px;
+  height: 400px;
+
+  /* BORDER */
+  border: 20px solid rgb(2, 0, 111);
+
+  /* https://9elements.github.io/fancy-border-radius/#100.56.46.30--. */
+  /* Fancy-Border-Radius */
+
+  border-radius: 56% 44% 70% 30% / 100% 46% 54% 0%;
+
+  /* https://cssgradient.io/ */
+  /* CSS Gradient */
+
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(75, 4, 4, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(40, 182, 7, 1) 0%,
+    rgba(41, 185, 5, 1) 0%,
+    rgba(197, 19, 200, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+/* PRACTICE */
+
+.box1 {
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+
+  border-top: 20px solid purple;
+  border-bottom: 20px solid purple;
+  border-right: 20px solid rgb(13, 255, 0);
+  border-left: 20px solid rgb(13, 255, 0);
+
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+/* ================================================================================================== */
+
+/* PADDING */
+
+.p {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  /* all */
+  padding: 10px;
+  /* x-axis */
+  padding-inline: 30px;
+  /* y-axis */
+  padding-block: 50px;
+  /* top right bottom left */
+  padding: 100px 200px 300px 400px;
+  /* top - bottom / left- right */
+  padding: 100px 200px;
+}
+
+/* ================================================================================================== */
+
+/* MARGIN */
+
+.m {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(188, 226, 18);
+  /* all */
+  margin: 10px;
+  /* x-axis */
+  margin-inline: 30px;
+  /* y-axis */
+  margin-block: 50px;
+  /* top right bottom left */
+  margin: 100px 200px 300px 400px;
+  /* top - bottom / left- right */
+  margin: 100px 200px;
+}
+
+/* ================================================================================================== */
+
+/* BOX-SIZING: BORDER-BOX */
+/* BOX MODEL */
+
+/* if we dont use [box-sizing: border-box;] its not use given size  */
+
+.b {
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+
+  padding: 100px;
+  margin: 100px;
+  border: 10px solid red;
+}
+
+/* if we  use [box-sizing: border-box;] its use given size */
+
+.b1 {
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+
+  padding: 100px;
+  margin: 100px;
+  border: 10px solid red;
+
+  box-sizing: border-box;
+}
