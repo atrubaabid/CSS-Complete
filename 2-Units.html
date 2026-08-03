@@ -15,35 +15,45 @@
     /* relative lengths */
     /* em, rem, %  */
 
-    .unitbox {
-        font-size: 20px;
+    html {
+        font-size: 25px
     }
 
-    /* PX */
-    .unit {
-        font-size: 30px;
+    .parent {
+        font-size: 20px
     }
 
-    /* em =16px  ye apny parent div k size k related value change kerta hy*/
-    .unit {
-        font-size: 3em;
-    }
+    .child {
+        background-color: aqua;
 
-    /* rem = 20px i gave on star selector to root */
-    /* ye apny root (*) k size k related value change kerta hy */
-    .unit {
-        font-size: 3rem;
+        /* font-size: 50px */
+        /* font-size: 50%;   */
+        /* font-size: 2em; */
+        /* font-size: 2rem; */
+        width: 20vw;
+        height: 20vh;
+        margin: auto;
     }
 </style>
 
 <body>
     <!-- UNITS IN CSS -->
 
-    <div class="unitbox">
 
-        <h1 class="unit">Atruba</h1>
+    <!-- px  =>   Fixed size
+         %   =>   Parent ke hisaab se
+         em  =>   Parent font-size ke hisaab se
+         rem =>   Root (html) font-size ke hisaab se
+         vw  =>   Screen width ka %
+         vh  =>   Screen height ka %
+         auto =>   Browser khud decide kare -->
 
+
+    <div class="parent">
+        <div class="child">Atruba</div>
     </div>
+
+
 </body>
 
 </html>

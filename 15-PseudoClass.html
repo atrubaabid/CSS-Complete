@@ -1,18 +1,15 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <style>
-
   /* PSEUDO CLASS */
 
-/* :first-child    	Parent ka pehla child
+  /* :first-child    	Parent ka pehla child
 :last-child     	Parent ka akhri child
 :nth-child(n)   	Parent ke sab children
 
@@ -20,56 +17,178 @@
 :last-of-type	    Apni tag type ka akhri element
 :nth-of-type(n) 	Sirf us tag type ko count karta hai */
 
-/* FIRST-CHILD   ager ye element, pury parent ka first child hoga to kam krega*/
-.psc p:first-child {
-  color: orange;
-}
+  /* FIRST-CHILD   ager ye element, pury parent ka first child hoga to kam krega*/
+  .psc p:first-child {
+    color: orange;
+  }
 
-/* LAST-CHILD   ager ye element, pury parent ka last child hoga to kam krega */
-.psc li:last-child {
-  color: purple;
-}
+  /* LAST-CHILD   ager ye element, pury parent ka last child hoga to kam krega */
+  .psc li:last-child {
+    color: purple;
+  }
 
-/* FIRST-OF-TYPE   pury parents me sy apny tag ka first element select krega */
-.psc li:first-of-type {
-  color: rgb(253, 0, 42);
-}
+  /* FIRST-OF-TYPE   pury parents me sy apny tag ka first element select krega */
+  .psc li:first-of-type {
+    color: rgb(253, 0, 42);
+  }
 
-/* LAST-OF-TYPE   pury parents me sy apny tag ka last element select krega */
-.psc p:last-of-type {
-  color: pink;
-}
+  /* LAST-OF-TYPE   pury parents me sy apny tag ka last element select krega */
+  .psc p:last-of-type {
+    color: pink;
+  }
 
-/* NTH-OF-TYPE    pury parents me sy selected element k tag count kerta hy*/
-.psc li:nth-of-type(2) {
-  color: chartreuse;
-}
+  /* NTH-OF-TYPE    pury parents me sy selected element k tag count kerta hy*/
+  .psc li:nth-of-type(2) {
+    color: chartreuse;
+  }
 
-/* NTH-CHILD     pury parents k child count kerta hy */
-p:nth-child(2) {
-  color: aqua;
-}
-    
+  /* NTH-CHILD     pury parents k child count kerta hy */
+  p:nth-child(2) {
+    color: aqua;
+  }
+
+
+  .hvr:hover {
+    color: red;
+  }
+
+  .act:active {
+    color: aqua;
+  }
+
+  .fcs:focus {
+    border: 2px solid blue;
+    outline: none;
+  }
+
+  .fc li:first-child {
+    color: red;
+  }
+
+  .lc li:last-child {
+    color: red;
+  }
+
+  .nc li:nth-child(even) {
+    color: aqua;
+  }
+
+  .check:checked {
+    accent-color: aqua;
+    color: white;
+    width: 20px;
+    height: 20px;
+  }
+
+  .dis:disabled {
+    background-color: lightgray;
+  }
+
+  .visit:visited {
+    color: orange;
+  }
+
+  .aLink:link {
+    color: orange;
+  }
+
+  p:not(.special) {
+    color: red;
+  }
 </style>
+
 <body>
 
-      <!-- PSEUDO CLASS -->
+  <!-- PSEUDO CLASS -->
 
-    <!-- <div class="psc">
-        <p>Atruba</p>
-        <p>Atruba</p>
-        <p>Atruba</p>
-        <p>Atruba</p>
-        <li>Ali</li>
-        <li>Ali</li>
-        <li>Ali</li>
-        <li>Ali</li>
-        <li>Ali</li>
-        <li>Ali</li>
-        <li>Ali</li>
-        <li>Ali</li>
-        <li>Ali</li>
-    </div> -->
-    
+  <div class="psc">
+    <p>Atruba</p>
+    <p>Atruba</p>
+    <p>Atruba</p>
+    <p>Atruba</p>
+    <li>Ali</li>
+    <li>Ali</li>
+    <li>Ali</li>
+    <li>Ali</li>
+    <li>Ali</li>
+    <li>Ali</li>
+    <li>Ali</li>
+    <li>Ali</li>
+    <li>Ali</li>
+  </div>
+
+  <!-- 1. :hover ⭐  =>  when mouse over the button  -->
+  <button class="hvr">hover</button>
+
+  <!-- 2. :active  =>  when you clicked any element -->
+  <button class="act">active</button>
+
+  <!-- 3. :focus  =>  When the input is clicked or selected with the keyboard  -->
+  <input type="text" placeholder="Enter Name" class="fcs">
+
+  <!-- 4. :first-child  =>  Selects the first child inside a parent. -->
+  <ul class="fc">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+  </ul>
+
+  <!-- 5. :last-child  =>  Selects the Last child inside a parent. -->
+  <ul class="lc">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+  </ul>
+
+  <!-- 6. :nth-child(2)  => Selects a specific child inside a parent-->
+  <ul class="nc">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+  </ul>
+
+
+  <!-- 7. :checked   =>  Styles checked checkboxes or radio buttons.  -->
+  <input type="checkbox" checked class="check"> I agree
+
+
+  <!-- 8. :disabled  =>  Styles disabled form elements. -->
+  <input type="text" disabled class="dis">
+
+
+
+  <!-- 9. :visited  =>  Styles links that have already been visited. -->
+  <a href="https://example.com" class="visit">Visit</a>
+
+
+
+  <!-- 10. :link  =>  Styles links that have not been visited -->
+  <a href="https://example.com" class="aLink">linked</a>
+
+
+
+  <!-- 11. :not()  =>  Selects elements that do not match a selector.  -->
+  <p>Paragraph 1</p>
+  <p class="special">Paragraph 2</p>
+  <p>Paragraph 3</p>
+
+
+
+
+  <!-- :hover → Mouse goes over the element.
+       :active → Mouse is pressing the element.
+       :focus → User clicked or tabbed into an input.
+       :first-child → First item.
+       :last-child → Last item.
+       :nth-child(n) → Numbered item.
+       :checked → Checkbox or radio is selected.
+       :disabled → Element cannot be used.
+       :visited → Link has been opened before.
+       :link → Link has not been opened yet.
+       :not() → Select everything except the specified selector. -->
+
+
 </body>
+
 </html>

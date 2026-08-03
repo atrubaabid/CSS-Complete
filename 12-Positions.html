@@ -9,113 +9,135 @@
 <style>
   /* POSITIONS IN CSS */
 
-  /* relative and absolute */
 
-  .p1 {
-    width: 800px;
-    height: 800px;
-    background-color: aqua;
-    margin: 100px auto;
+
+  /* STATIC */
+  .static {
+    width: 100px;
+    height: 100px;
+    background: red;
+
+    position: static;
+
+    /* these properties not wrok bcz by default position is static */
+    top: 500px;
+    left: 50px;
+  }
+
+
+
+  /* RELATIVE */
+  .relative {
+    width: 100px;
+    height: 100px;
+    background: blue;
+
+    position: relative;
+    top: 50px;
+    left: 60px;
+  }
+
+
+  /* ABSOLUTE */
+  .parent {
+    margin-top: 5rem;
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+
+    /* ager parent ko relative na dyn tw browser screen k hisab sy move krega */
     position: relative;
   }
 
-  .pb {
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    border: 1px solid red;
-    font-size: 30px;
-    position: absolute;
-  }
-
-  /* z-index */
-
-  .pb-1 {
-    z-index: 4;
-  }
-
-  .pb-2 {
-    z-index: 2;
-  }
-
-  .pb-3 {
-    z-index: 3;
-  }
-
-  /* =========================================== */
-
-  /* .pb-2 {
-    right: 0;
-}
-
-.pb-3 {
-    right: 0;
-    bottom: 0;
-}
-
-
-.pb-4 {
-    left: 0;
-    bottom: 0;
-}
-
-.pb-5 {
-    top: 360px;
-    left: 360px;
-} */
-
-  /* fixed */
-
-  .ph {
-    width: 100%;
+  .absolute {
+    width: 50px;
     height: 50px;
-    background-color: aqua;
+    background: aqua;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+
+
+  /* FIXED */
+
+  .navbar {
     position: fixed;
-  }
+    top: 0;
+    left: 0;
 
-  .pc {
     width: 100%;
-    height: 100vh;
-    background-color: rgb(242, 171, 78);
-    border: 1px solid purple;
+    background: black;
+    color: white;
+    padding: 15px;
   }
 
-  /* sticky */
-
-  .pbb {
-    height: 200px;
-    width: 200px;
-    background-color: blue;
+  /* STICKY */
+  .heading {
     position: sticky;
-    top: 300px;
+    top: 200px;
+
+    background: yellow;
   }
 </style>
 
 <body>
 
-
   <!-- POSITIONS IN CSS -->
 
-  <!-- /* relative and absolute */ -->
+  <!-- static -->
+  <div class="static">Box</div>
 
-  <div class="p1">
-    <div class="pb pb-1">Box 1</div>
-    <div class="pb pb-2">Box 2</div>
-    <div class="pb pb-3">Box 3</div>
-    <div class="pb pb-4">Box 4</div>
-    <div class="pb pb-5">Box 5</div>
+  <!-- relative -->
+  <div class="relative">Box</div>
+
+  <!-- absolute -->
+  <div class="parent">
+    <div class="absolute"></div>
   </div>
 
-  <!-- /* fixed */ -->
-
-  <div class="ph"></div>
-  <div class="pc"></div>
-  <div class="pc">
-
-    <div class="pbb">sticky </div>
+  <!-- fixed -->
+  <div class="navbar">
+    Navbar
   </div>
-  <div class="pc"></div>
-  <div class="pc"></div>
+
+  <p>Bahut sara content...</p>
+
+
+  <!-- sticky -->
+
+  <h2 class="heading">
+    HTML
+  </h2>
+
+  <p>Bahut sara content.... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum saepe quasi porro? Esse
+    voluptatum dolorem animi molestias! Molestias dolorum voluptas distinctio laudantium ex delectus rem labore tenetur
+    deleniti perferendis magnam, necessitatibus explicabo reprehenderit sed autem iste a beatae repellendus aperiam?
+    Magni dolores quod aliquid at vitae consequatur facilis possimus minus voluptates. Laboriosam consequatur commodi
+    repellendus optio iste tenetur officiis, corporis odit quas a. Autem ut laborum quas porro alias, dolore possimus
+    eius velit ea nobis temporibus maxime libero? Odit obcaecati aspernatur neque, dolorint aut, repellat amet, nobis
+    quaerat cupiditate. Hic voluptas reiciendis praesentium laudantium fugiat cum tempora quisquam odit est soluta earum
+    nisi adisequi necessitatibus tempora quaerat quo illo. Ut possimus unde est at ex debitis. Ab veniam in molestiae
+    officia blanditiis iste itaque nostrum nobis laboriosam quae quia praesentium eaque est rem aperiam omnis ratione
+    vitae minima incidunt adipisci, cumque excepturi. Qui eos, quas alias quis tempora quasi in praesentium, accusantium
+    quo, sapiente necessitatibus? Suscipit, ratione praesentium. Obcaecati omnis iusto totam ullam quo deleniti sunt ad!
+    Eos dignissimos sit fugit corrupti numquam. Nulla deserunt porro quod ducimus, nostrum eum, minus rem quidem quis
+    maiores blanditiis dolores, qui hic fugit modi quas. Veritatis, consequatur ipsum adipisci sequi cumque qui.
+    Voluptatum labore itaque quia eum? Ut perferendis inventore hic sed error et, incidunt voluptas, sunt quam quo
+    cumque illo, adipisci rerum. Explicabo, ipsa repellat.</p>
+
+
+
+
+
+
+  <!-- Static 🪑 → Jahan rakha hai, wahi rehta hai.
+  Relative 🚶 → Apni jagah se thoda move karta hai.
+  Absolute 🎈 → Normal flow chhod kar parent ke hisaab se position leta hai.
+  Fixed 📌 → Screen par chipak jata hai.
+  Sticky 🧲 → Scroll tak normal, phir chipak jata hai. -->
 
 </body>
 
