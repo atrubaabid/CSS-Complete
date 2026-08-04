@@ -1,87 +1,89 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <style>
-    
-    /* NEW-CSS-FEATURES */
+  /* NEW-CSS-FEATURES */
 
-/* CSS LOGICAL  PROPERTIES (INLINE-BLOCK) */
+  /* CSS LOGICAL  PROPERTIES (INLINE-BLOCK) */
 
-.ncssv {
-  width: 80%;
-  margin: 10px auto;
-}
+  .ncssv {
+    width: 80%;
+    margin: 10px auto;
+  }
 
-.ncv {
-  border-inline: 2px solid yellowgreen;
-  border-block: 2px solid red;
-}
+  .ncv {
+    border-inline: 5px solid purple;
+    border-block: 5px solid red;
+  }
 
-/* CSS-NESTING */
+  /* CSS-NESTING */
 
-.cssnes {
-  & h1 {
-    color: orange;
+  .cssnes {
+    & h1 {
+      color: orange;
 
-    &::before {
-      content: "*";
+      &::before {
+        content: "*";
+      }
+
+      &::after {
+        content: "*";
+      }
+
+      /* WRITING-MODE */
+      /* writing-mode: horizontal-tb; */
+      /* writing-mode: vertical-lr; */
+      writing-mode: vertical-rl;
+      /* writing-mode: sideways-lr; */
+      /* writing-mode: sideways-rl; */
     }
 
-    &::after {
-      content: "*";
+    & p {
+      color: purple;
+      font-weight: 800;
     }
 
-    /* WRITING-MODE */
-    writing-mode: vertical-lr;
-  }
+    & a {
+      text-decoration: none;
+    }
 
-  & p {
-    color: purple;
+    & button {
+      background-color: aqua;
+    }
   }
-
-  & a {
-    text-decoration: none;
-  }
-
-  & button {
-    background-color: aqua;
-  }
-}
 </style>
+
 <body>
 
-      <!-- NEW-CSS-FEATURES -->
+  <!-- NEW-CSS-FEATURES -->
 
-    <!-- /* CSS LOGICAL  PROPERTIES (INLINE-BLOCK) */ -->
+  <!-- /* CSS LOGICAL  PROPERTIES (INLINE-BLOCK) */ -->
 
-    <!-- <div class="ncssv">
+  <div class="ncssv">
 
-        <h1 class="ncv">SYEDA ATRUBA ABID ALI</h1>
-    </div> -->
+    <h1 class="ncv">SYEDA ATRUBA ABID ALI</h1>
+  </div>
 
 
-        <!-- ================================================= -->
+  <!-- ================================================= -->
 
-    <!-- CSS-NESTING -->
+  <!-- CSS-NESTING -->
 
-    <!-- <div class="cssnes">
-        <h1>Atruba</h1>
-        <p>ABid</p>
-        <a href="">Go</a>
-        <br>
-        <button>Done</button>
-    </div>
-
+  <div class="cssnes">
+    <h1>Atruba</h1>
+    <p>ABid</p>
+    <a href="">Go</a>
     <br>
-    <br>
-    <br> -->
-    
+    <button>Done</button>
+  </div>
+
+
+
 </body>
+
 </html>

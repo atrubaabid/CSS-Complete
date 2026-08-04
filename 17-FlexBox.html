@@ -1,93 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <style>
   /* FLEXBOX IN CSS */
 
-/* display: flex =   	Container ko flex layout bana deta hai.
+  .container {
+    height: 90vh;
+    background-color: aqua;
 
-flex-direction =      	Items kis direction (row/column) mein lagenge.
+    display: flex;
 
-justify-content =     	Main axis par items ki position set karta hai.
+    /* flex-direction: row;
+    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse; */
 
-align-items =     	Cross axis par items ko align karta hai.
 
-flex-wrap =   	Space kam ho to items next line mein jayen ya nahi.
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
 
-align-content =   	Multiple rows/columns ki alignment control karta hai.
 
-gap = 	Items ke darmiyan spacing deta hai.
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: baseline; */
+    /* align-items: normal; */
+    /* align-items: stretch; */
 
-flex-flow =   	flex-direction aur flex-wrap ka shorthand hai. */
 
-.fb {
-  width: 100%;
-  height: 800px;
-  background-color: aqua;
-  margin: auto;
+    /* gap: 20px; */
+    /* row-gap: 30px; */
+    /* column-gap: 30px; */
+    /* gap: 30px 30px; */
 
-  /* flexbox properties */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* flex-wrap: wrap; */
-  gap: 10px;
-  /* align-content: center; */
-}
 
-/* 
-
-flex-grow =	Extra available space kitni le, ye decide karta hai.
-
-flex-shrink =	Space kam ho to item kitna chhota ho, ye decide karta hai.
-
-flex-basis =	Item ka initial size set karta hai.
-
-flex =	grow + shrink + basis ka shorthand hai.
-
-align-self =	Sirf ek specific item ki alignment change karta hai.
-
-order =	HTML badle bina item ki position/order change karta hai.bina item ki position/order change karta hai.   */
-
-.items {
-  /* margin: 2rem; */
-  /* padding: 2rem; */
-  /* items properties */
-  /* width: 100px;
-    height: 100px; */
-  background-color: chartreuse;
-  border: 1px solid red;
-  /* flex: 1; */
-  /* flex-basis: 200px; */
-}
-
-.i-1 {
-  /* align-self: flex-end; */
-  flex-grow: 2;
-  /* flex-shrink: 3; */
-}
-/* 
-.i-2 {
-  flex-grow: 4;
-} */
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
 
     
+
+    /* align-content: stretch; */
+    align-content: flex-start;
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
+
+
+
+    /* flex-flow: direction wrap; */
+    flex-flow: column wrap;
+
+  }
+
+
+  .box3 {
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+    /* flex-basis: 100px; */
+
+
+    /* flex: grow shrink basis; */
+    /* flex: 1 1 300px; */
+
+
+    /* align-self: auto; */
+    /* align-self: center; */
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+    /* align-self: baseline; */
+    /* align-self: stretch; */
+    /* align-self: normal; */
+
+    /* order: -1; */
+    /* order: 7; */
+    order: 3;
+
+
+  }
+
+  .box1 {
+    order: 1;
+  }
+
+  .box2 {
+    order: 2;
+  }
+
+  .box4 {
+    order: 4;
+  }
+
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background: rgb(0, 108, 151);
+    color: white;
+    margin: 5px;
+  }
+
+
+  /* PRACTICE */
+
+  .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 300px;
+    border: 2px solid black;
+  }
+
+  .boxx {
+    width: 100px;
+    height: 100px;
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
 </style>
+
 <body>
 
-      <!-- FLEXBOX IN CSS -->
-<!-- 
-    <div class="fb">
-        <div class="items i-1">Atruba 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quas molestiae! Ab odit animi eum ipsa facilis, ullam incidunt at atque voluptates tempora quae officia reiciendis error modi, quo a dolores tempore omnis!</div>
-        <div class="items i-2">Atruba 2</div>
-        <div class="items i-3">Atruba 3</div>
-        <div class="items i-4">Atruba 4</div>
-        <div class="items i-5">Atruba 5</div>
-    </div> -->
-    
+  <!-- FLEXBOX IN CSS -->
+
+
+  <div class="container">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+  </div>
+
+
+  <!-- PRACTICE -->
+
+  <div class="container2">
+    <div class="boxx">HTML</div>
+    <div class="boxx">CSS</div>
+    <div class="boxx">JS</div>
+  </div>
+
+
+
+
+  <!-- 
+  FOR CONTAINERS-------------
+  
+  display: flex   =>    Parent ko flex banao
+
+  flex-direction   =>    Row ya Column
+
+  justify-content   =>    Left ↔ Right alignment
+
+  align-items   =>    Up ↕ Down alignment
+
+  gap   =>    Boxes ke beech space
+
+  flex-wrap   =>    Next line me jana ya nahi
+
+  align-content  =>  Multiple rows/columns ki alignment control karta hai. jb wrap use ho
+
+  flex-flow  =>  flex-direction and flex-wrap ka shorthand
+
+
+  FOR ITEMS-------------------
+
+
+  flex-grow   =>    Extra space lena
+
+  flex-shrink   =>    Chhota hona
+
+  flex-basis   =>    Starting width
+
+  flex   =>    Grow + Shrink + Basis shortcut
+
+  align-self   =>    Sirf ek item ki alignment
+
+  order  =>   by default sab items ka order 0 hota hy ager -1 ya - me value do tw phly aingi us k bad 1, 2,3 dogy tw 0 no items k bad vo items show hongy-->
+
 </body>
+
 </html>

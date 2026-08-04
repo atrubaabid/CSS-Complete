@@ -9,45 +9,6 @@
 <style>
   /* PSEUDO CLASS */
 
-  /* :first-child    	Parent ka pehla child
-:last-child     	Parent ka akhri child
-:nth-child(n)   	Parent ke sab children
-
-:first-of-type  	Apni tag type ka pehla element
-:last-of-type	    Apni tag type ka akhri element
-:nth-of-type(n) 	Sirf us tag type ko count karta hai */
-
-  /* FIRST-CHILD   ager ye element, pury parent ka first child hoga to kam krega*/
-  .psc p:first-child {
-    color: orange;
-  }
-
-  /* LAST-CHILD   ager ye element, pury parent ka last child hoga to kam krega */
-  .psc li:last-child {
-    color: purple;
-  }
-
-  /* FIRST-OF-TYPE   pury parents me sy apny tag ka first element select krega */
-  .psc li:first-of-type {
-    color: rgb(253, 0, 42);
-  }
-
-  /* LAST-OF-TYPE   pury parents me sy apny tag ka last element select krega */
-  .psc p:last-of-type {
-    color: pink;
-  }
-
-  /* NTH-OF-TYPE    pury parents me sy selected element k tag count kerta hy*/
-  .psc li:nth-of-type(2) {
-    color: chartreuse;
-  }
-
-  /* NTH-CHILD     pury parents k child count kerta hy */
-  p:nth-child(2) {
-    color: aqua;
-  }
-
-
   .hvr:hover {
     color: red;
   }
@@ -89,33 +50,43 @@
   }
 
   .aLink:link {
-    color: orange;
+    color: aqua;
   }
 
-  p:not(.special) {
+  /* p:not(.special) {
     color: red;
+  } */
+
+
+  .fot p:first-of-type {
+    color: purple;
+  }
+
+  .fot p:last-of-type {
+    color: orangered;
+  }
+
+
+  .fot h4:first-of-type {
+    color: purple;
+  }
+
+  .fot h4:last-of-type {
+    color: orangered;
+  }
+
+  .fot p:nth-of-type(2) {
+    color: aqua;
+  }
+
+  .fot h4:nth-of-type(2) {
+    color: yellow;
   }
 </style>
 
 <body>
 
   <!-- PSEUDO CLASS -->
-
-  <div class="psc">
-    <p>Atruba</p>
-    <p>Atruba</p>
-    <p>Atruba</p>
-    <p>Atruba</p>
-    <li>Ali</li>
-    <li>Ali</li>
-    <li>Ali</li>
-    <li>Ali</li>
-    <li>Ali</li>
-    <li>Ali</li>
-    <li>Ali</li>
-    <li>Ali</li>
-    <li>Ali</li>
-  </div>
 
   <!-- 1. :hover ⭐  =>  when mouse over the button  -->
   <button class="hvr">hover</button>
@@ -164,7 +135,7 @@
 
 
   <!-- 10. :link  =>  Styles links that have not been visited -->
-  <a href="https://example.com" class="aLink">linked</a>
+  <a href="https://example2.com" class="aLink">linked</a>
 
 
 
@@ -172,6 +143,22 @@
   <p>Paragraph 1</p>
   <p class="special">Paragraph 2</p>
   <p>Paragraph 3</p>
+
+
+  <!-- 12 -->
+  <!-- :first-of-type  	Apni tag type ka pehla element select krega
+       :last-of-type	    Apni tag type ka akhri element select krega
+       :nth-of-type(n) 	Sirf us tag type ko count karta hai -->
+
+  <div class="fot">
+    <p>one</p>
+    <h4>one</h4>
+    <p>two</p>
+    <h4>two</h4>
+    <p>three</p>
+    <h4>three</h4>
+  </div>
+
 
 
 
@@ -187,6 +174,22 @@
        :visited → Link has been opened before.
        :link → Link has not been opened yet.
        :not() → Select everything except the specified selector. -->
+
+
+       
+<!-- 
+  💡 Easy Trick
+  child = Sab bachon ko count karo.
+  of-type = Sirf same tag ko count karo.
+
+  Yaad rakhne ka formula:
+
+  :first-child → Parent ka 1st child
+  :last-child → Parent ka last child
+  :nth-child(3) → Parent ka 3rd child
+  :first-of-type → Pehla same tag
+  :last-of-type → Last same tag
+  :nth-of-type(3) → 3rd same tag -->
 
 
 </body>
